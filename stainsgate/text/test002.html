@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>使用SVG实现文字的圆弧显示效果</title>
+	<style>
+		text{
+		   font-family:SimSun;/*定义字体*/
+		   font-size:36px;/*定义文字大小*/
+		   fill:rgb(29, 172, 53);/*定义文字填充颜色*/
+		}
+        .a{
+            -webkit-text-stroke: 1px black;  
+            -webkit-text-fill-color : transparent;
+            font-size: 30px; 
+            color:#fff;
+        }
+	</style>
+</head>
+<body>
+	<svg width="1000" height="800">
+	   <defs>
+	       <path id="path1" d="M100,300 A100,100 0 0 0 395,300">
+	   </defs>
+	   <text x="50" y="100">
+	       <textPath xlink:href="#path1">生日快乐啊哈哈哈哈哈哈哈</textPath>
+	   </text>
+	</svg>
+
+<div class="a">生日快乐</div>
+</body>
+</html>
