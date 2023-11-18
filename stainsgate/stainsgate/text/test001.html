@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1 {
+        position: absolute;
+        width: 720px;
+        height: 720px;
+        left: 720px;
+      }
+      .box {
+        position: absolute;
+        overflow: hidden;
+        width: 720px;
+        height: 720px;
+        margin: 0 auto;
+        border: 1px solid black;
+      }
+      iframe {
+        width: 720px;
+        height: 720px;
+      }
+    </style>
+    <script type="text/javascript">
+      alert("内嵌式");
+    </script>
+  </head>
+  <body>
+    在新窗口打开
+    <button type="button">
+      <a href="http://baidu.com" target="_blank" rel="noopener noreferrer"
+        >百度</a
+      >
+    </button>
+    <br />
+    在原窗口打开
+    <button>
+      <a href="http://weibo.com" target="_self" rel="noopener noreferrer"
+        >微博</a
+      >
+    </button>
+    <div class="box">
+      <iframe src="http://baidu.com">
+        width="260%" height="250%" scrolling="yes" frameborder="0"
+      </iframe>
+    </div>
+
+    <div class="box1">
+      <iframe src="http://baidu.com">
+        width="260%" height="250%" scrolling="yes" frameborder="0"
+      </iframe>
+    </div>
+  </body>
+</html>
